@@ -1,2 +1,2 @@
-# main-container
-This is the main container of all micro front ends
+# shell-app
+This is the shell of all my micro front ends.
