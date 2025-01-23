@@ -4,13 +4,9 @@ module.exports = withModuleFederationPlugin({
 
   name: 'shell-app',
 
-  exposes: {
-    './Component': './src/app/app.component.ts',
-  },
-
-  remotes: {
-    portfolio: "portfolio@/portfolio/remoteEntry.js", // Load Portfolio MFE
-  },
+  // remotes: {
+  //   portfolio: "portfolio@https://portfolio-angular-d4f1f.firebaseapp.com/remoteEntry.js" // Correct path-based loading
+  // },
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
