@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation-runtime';
 
-export const PORTFOLIO_DEV = "'https://portfolio-dev-5f375.firebaseapp.com";
+export const PORTFOLIO_DEV = "https://portfolio-dev-5f375.firebaseapp.com";
 export const PORTFOLIO_ANGULAR =
-  "'https://portfolio-angular-d4f1f.firebaseapp.com";
+  "https://portfolio-angular-d4f1f.firebaseapp.com";
 export const PORTFOLIO_AREACT = '';
 
 export const routes: Routes = [
