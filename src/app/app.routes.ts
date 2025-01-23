@@ -11,6 +11,6 @@ export const routes: Routes = [
             remoteEntry: 'https://portfolio-angular-d4f1f.firebaseapp.com/remoteEntry.js',
             exposedModule: './Component'
           })
-          .then(m => m.MyTicketsComponent)
+          .then(m => m.AppComponent)
       },
 ];
