@@ -1,5 +1,6 @@
 import { Routes } from '@angular/router';
 import { loadRemoteModule } from '@angular-architects/module-federation-runtime';
+import { HomeComponent } from './core/home/home.component';
 
 export const PORTFOLIO_DEV = 'https://portfolio-dev-5f375.firebaseapp.com';
 export const PORTFOLIO_ANGULAR =
@@ -11,7 +12,8 @@ export const PORTFOLIO_ANGULAR_LOCAL = 'http://localhost:4202/portfolio';
 export const PORTFOLIO_AREACT_LOCAL = '';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'portfolio', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   {
     path: 'portfolio',
     loadComponent: () =>
@@ -21,5 +23,5 @@ export const routes: Routes = [
         exposedModule: './Component',
       }).then((m) => m.AppComponent),
   },
-  { path: '**', redirectTo: 'one' },
+  { path: '**', redirectTo: '/home' },
 ];
