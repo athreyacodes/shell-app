@@ -5,14 +5,13 @@ export interface IStoreValue {
 }
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class LocalStoreService {
-
   private readonly storeName = 'amr-home-local-store-values';
   private storeValue: IStoreValue;
 
-  constructor() { 
+  constructor() {
     this.storeValue = this.getStoreValue();
   }
 
