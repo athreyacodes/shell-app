@@ -29,33 +29,6 @@
             "value": "0"
           }
         ]
-      },
-      {
-        "source": "/remoteEntry.js",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "http://localhost:4200"
-          }
-        ]
-      },
-      {
-        "source": "/remoteEntry.js",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://shell-app-3d8d6.web.app"
-          }
-        ]
-      },
-      {
-        "source": "/remoteEntry.js",
-        "headers": [
-          {
-            "key": "Access-Control-Allow-Origin",
-            "value": "https://www.athreyamr.dev"
-          }
-        ]
       }
     ]
   }
